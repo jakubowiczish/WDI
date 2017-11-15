@@ -39,7 +39,7 @@ int main()
             }
             else if(roznica < 0)
             {
-                ciagodj = max(ciagdod,dciagu);
+                ciagodj = max(ciagodj,dciagu);
             }
             roznica = tab[i] - tab[i-1];
             dciagu = 2;
