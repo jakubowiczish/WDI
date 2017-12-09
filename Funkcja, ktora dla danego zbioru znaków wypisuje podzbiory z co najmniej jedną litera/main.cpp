@@ -16,7 +16,7 @@ void wypisz_zbiory(string zbior, string podzbior, int element){
         bool jest_znak = false;
         for(int i = 0; i < podzbior.size(); i++){
             if(!(podzbior[i] >= '0' && podzbior[i] <= '9')){
-                jest_znak= true;
+                jest_znak = true;
                 break;
             }
         }
