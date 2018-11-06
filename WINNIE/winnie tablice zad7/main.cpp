@@ -18,7 +18,6 @@ procedury nale¿y przekazaæ: wype³nian¹ tablicê, wyraz pocz¹tkowy i ró¿nicê ci¹gu
 */
 using namespace std;
 const int N = 10;
-
 void fill_array(int tab[N][N], int a1, int r)
 {
     int dlugosc = N-1;

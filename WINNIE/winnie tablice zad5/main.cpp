@@ -15,13 +15,12 @@ arytmetycznej wszystkich elementów tablicy.
 */
 using namespace std;
 
-const int N = 2;
+const int N = 4;
 
 bool average_pair(int tab[N][N])
 {
     int sum = 0;
     double av = 0;
-
     for(int i=0; i<N; i++)
     {
         for(int j=0; j<N; j++)
@@ -29,23 +28,20 @@ bool average_pair(int tab[N][N])
             sum += tab[i][j];
         }
     }
-
     av = sum /(N*N);
-
     cout<<"Srednia tabeli to: "<<av<<endl;
-
     for(int i=0; i<N-1; i++)
     {
         for(int j=0; j<N-1; j++)
         {
             if(((tab[i][j] + tab[i][j+1]) == av) || ((tab[i][j] + tab[i+1][j]) == av))
             {
-                //cout<<"TAK"<<endl;
+                cout<<"TAK"<<endl;
                 return true;
             }
         }
     }
-    return false;
+return false;
 }
 
 int main()
@@ -60,11 +56,10 @@ int main()
     {
         for(int j=0; j<N; j++)
         {
-            t[i][j] = rand() % 2;
-            cout<<t[i][j]<<"\t";
+            t[i][j] = rand() % 200 +1;
+            cout<<t[i][j]<<" ";
         }
-    cout<<endl<<endl;
+    cout<<endl;
     }
-
-    cout<<average_pair(t);
+    average_pair(t);
 }

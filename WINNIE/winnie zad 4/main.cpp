@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void zamiana(int N, int p) // N - liczba ktora chcemy zamienic, p - podstawa systemu
+void zamiana(int N, int p)
 {
     if(N == 0) return;
 
